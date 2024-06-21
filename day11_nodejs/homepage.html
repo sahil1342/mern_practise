@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            height: 10vh;
+            background-color: #4CAF50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+        }
+        main {
+            padding: 48px;
+            height: 70vh;
+            background-color: #FFEBCD;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 16px;
+            width: calc(33.333% - 32px); /* 3 cards in a row with gap */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .product-card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            height: 20vh;
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <nav>Home</nav>
+    <main>
+        <a href="/products">View Products</a>
+    </main>
+    <footer>CONTACT DETAILS</footer>
+</body>
+</html>
