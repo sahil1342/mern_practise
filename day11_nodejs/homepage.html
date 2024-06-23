@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: #e0eafc;
+            color: #333;
+            line-height: 1.6;
+            margin: 0; 
+        }
+        nav {
+            height: 60px;
+            background-color: #2c3e50;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            color: white;
+            font-size: 24px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav .logo {
+            font-weight: bold;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #bdc3c7;
+        }
+        nav .search-container {
+            display: flex;
+            align-items: center;
+        }
+        nav .search-container input {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        .hero {
+            background: linear-gradient(135deg, #74ebd5, #acb6e5);
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px 50px 20px;
+            margin-bottom: 20px;
+        }
+        .hero h1 {
+            font-size: 64px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        .hero .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .hero .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #2c3e50;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .hero .button:hover {
+            background-color: #34495e;
+        }
+        main {
+            padding: 20px 48px;
+            min-height: calc(100vh - 120px); 
+            background-color: #ecf0f1;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+            align-items: center;
+        }
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            padding: 16px;
+            width: calc(33.333% - 32px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product-card img {
+            max-width: 100%;
+            border-radius: 12px;
+            margin-bottom: 16px;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            height: 60px;
+            background-color: #2c3e50;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        a:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">MyStore</div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+        </div>
+    </nav>
+    <div class="hero">
+        <h1>WELCOME <span class="highlight">HOME</span></h1>
+        <p>Discover a world of <span class="highlight">exclusive products</span> and <span class="highlight">amazing deals</span></p>
+        <p>Start your shopping journey with us today!</p>
+        <a href="/products" class="button">Learn More</a>
+    </div>
+    <main>
+       
+    </main>
+    <footer>Contact us</footer>
+</body>
+</html>
